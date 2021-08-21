@@ -14,20 +14,106 @@
     <main>
         <section class="container mx-auto">
             <div class="grid lg:grid-cols-2 gap-7">
-                <div class="">
-                    <img width="" src="images/mac.png" alt="">
+                <div>
+                    <img class="w-4/5 mx-auto" src="images/mac.png" alt="">
                 </div>
-                <div class="">
-                    <h2 class="text-3xl font-bold text-black-500">Customize your Blue 24-inch iMac with Apple M1 chip
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 pr-20">Customize your Blue 24-inch iMac with Apple M1
+                        chip
                     </h2>
-                    <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores,7-core GPU,16-core
+                    <p class="pt-5 text-base text-gray-500 pr-20">Apple M1 chip with 8-core CPU with 4 performance cores
+                        and 4
+                        efficiency cores,7-core
+                        GPU,16-core
                         Neural Engine,8GB unified memory 256GB SSD storage Two Thunderbolt/USB $ ports Magic Mouse Magic
                         Keyboard - US English</p>
+                    <h4 class="font-bold text-xl mb-3 mt-8">Memory</h4>
+                    <div>
+                        <button id="eight-unifide-memory"
+                            class="px-5 py-1 rounded-lg border border-gray-400 hover:bg-gray-600 hover:text-white"
+                            type="submit">8GB
+                            Unified
+                            Memory</button>
+                        <button id="sixteen-unifide-memory"
+                            class="px-5 py-1 rounded-lg border border-gray-400 hover:bg-gray-600 hover:text-white"
+                            type="submit">16GB Unified Memory</button>
+                    </div>
+                    <h4 class="font-bold text-xl mb-3">Storage</h4>
+                    <div>
+                        <button id="lowest-storage"
+                            class="px-5 py-1 rounded-lg border border-gray-400 hover:bg-gray-600 hover:text-white"
+                            type="submit">256GB SSD storage</button>
+                        <button id="medium-storage"
+                            class="px-5 py-1 rounded-lg border border-gray-400 hover:bg-gray-600 hover:text-white"
+                            type="submit">512GB SSD storage</button>
+                        <button id="maximum-storage"
+                            class="px-5 py-1 rounded-lg border border-gray-400 hover:bg-gray-600 hover:text-white"
+                            type="submit">1TB SSD storage</button>
+                    </div>
+                    <h4 class="font-bold text-xl mb-3">Choose your Delivery option</h4>
+                    <div>
+                        <button id="free-delivery"
+                            class="px-5 py-1 rounded-lg border border-gray-400 hover:bg-gray-600 hover:text-white"
+                            type="submit">Friday,Aug 25 FREE Prime Delivery</button>
+                        <button id="charge-delivery"
+                            class="px-5 py-1 rounded-lg border border-gray-400 hover:bg-gray-600 hover:text-white"
+                            type="submit">Friday,Aug 21 Delivery charge $20</button>
+                    </div>
+
+                    <div class="w-9/12 mt-6">
+                        <div class="grid grid-cols-2">
+                            <div>
+                                <h5 class="font-bold">Best price</h5>
+                            </div>
+                            <div>
+                                <h5 class="font-bold">$<span id="best-price">1299</span></h5>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 my-2">
+                            <div>
+                                <h5 class="font-bold">Extra Memory Cost</h5>
+                            </div>
+                            <div>
+                                <h5 class="font-bold">$<span id="memory-cost">0</span></h5>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 my-2">
+                            <div>
+                                <h5 class="font-bold">Extra storage Cost</h5>
+                            </div>
+                            <div>
+                                <h5 class="font-bold">$<span id="storage-cost">0</span></h5>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2">
+                            <div>
+                                <h5 class="font-bold">Delivery charge</h5>
+                            </div>
+                            <div>
+                                <h5 class="font-bold">$<span id="delivery-cost">0</span></h5>
+                            </div>
+                        </div>
+                        <hr class="my-3 border-gray-900 border-2">
+                        <div class="grid grid-cols-2">
+                            <div>
+                                <h5 class="font-bold">Total Price</h5>
+                            </div>
+                            <div>
+                                <h5 class="font-bold">$<span id="total-cost">1299</span></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 class="font-bold text-xl mb-1 text-gray-800 mt-8">Add Pomo code</h4>
+                    <input id="pomo-code" class="h-9 border border-gray-500 rounded-lg pl-2" type="text">
+                    <button id="apply-pomo" type="submit"
+                        class="bg-red-400 text-white py-2 px-3 rounded-lg">Apply</button>
                 </div>
             </div>
+            <hr class="border-gray-500 border-1 mt-12 mb-2">
+            <h3 class="text-center font-bold text-4xl mb-8">Total $<span id="total">1299</span></h3>
         </section>
     </main>
-
+    <script src="js/app.js"></script>
 </body>
 
 </html>
